@@ -77,7 +77,7 @@ require_once('partials/_head.php');
                         <a href="customes.php?delete=<?php echo $cust->customer_id; ?>">
                           <button class="btn btn-sm btn-danger">
                             <i class="fas fa-trash"></i>
-                            Delete
+                            Remove
                           </button>
                         </a>
 

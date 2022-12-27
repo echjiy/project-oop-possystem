@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>POS System</title>
+    <title>Point of Sale and
+Inventory Management</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -94,8 +95,8 @@ button:active {
 
     
 			
-                <a href="pos/admin/"> <button>Login Admin</button></a>
-                <a href="pos/customer"> <button>Customer Admin</button></a>
+                <a href="pos/admin/"> <button>Admin Login</button></a>
+                <a href="pos/customer"> <button>Customer Login</button></a>
            
         </div>
     </div>

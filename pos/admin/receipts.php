@@ -38,13 +38,13 @@ require_once('partials/_head.php');
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th class="text-success" scope="col">Code</th>
+                                        <th scope="col">Code</th>
                                         <th scope="col">Customer</th>
-                                        <th class="text-success" scope="col">Product</th>
+                                        <th scope="col">Product</th>
                                         <th scope="col">Unit Price</th>
-                                        <th class="text-success" scope="col">Qty</th>
+                                        <th scope="col">Qty</th>
                                         <th scope="col">Total Price</th>
-                                        <th class="text-success" scope="col">Date</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
