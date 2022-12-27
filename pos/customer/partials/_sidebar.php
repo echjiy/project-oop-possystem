@@ -84,22 +84,22 @@ while ($customer = $res->fetch_object()) {
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-secondary" href="dashboard.php">
-              <i class="ni ni-tv-2 text-secondary"></i> Dashboard
+              <i class="fa-solid fa-gauge-high"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="change_profile.php">
-              <i class="fas fa-users text-secondary"></i> My Profile
+              <i class="fa-solid fa-circle-user"></i> My Profile
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="orders.php">
-              <i class="ni ni-cart text-secondary"></i>Make Order
+              <i class="fa-solid fa-cart-arrow-down"></i></i>Make Order
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="payments.php">
-              <i class="ni ni-credit-card text-secondary"></i> Payments
+              <i class="fa-solid fa-money-bills"></i> Payments
             </a>
           </li>
         </ul>
@@ -111,12 +111,12 @@ while ($customer = $res->fetch_object()) {
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
             <a class="nav-link text-secondary" href="orders_reports.php">
-              <i class="fas fa-shopping-basket"></i> My Orders
+              <i class="fa-solid fa-truck-ramp-box"></i> My Orders
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="payments_reports.php">
-              <i class="fas fa-funnel-dollar"></i> My Payments
+              <i class="fa-solid fa-wallet"></i> My Payments
             </a>
           </li>
         </ul>
