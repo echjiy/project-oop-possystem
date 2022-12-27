@@ -20,8 +20,8 @@ require_once('partials/_analytics.php');
     require_once('partials/_topnav.php');
     ?>
     <!-- Header -->
-    <div style="background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
-      <span class="mask bg-gradient-dark opacity-8"></span>
+    <div style="background-size: cover;" class="header  pb-8 pt-5 pt-md-8 bg-gradient-dark">
+      <span class="bg-gradient-dark opacity-8"></span>
       <div class="container-fluid">
         <div class="header-body">
           <!-- Card stats -->
@@ -100,7 +100,7 @@ require_once('partials/_analytics.php');
       </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid mt--7">
+    <div class="container-fluid bg-gradient-dark mt--7">
       <div class="row mt-5">
         <div class="col-xl-12 mb-5 mb-xl-0">
           <div class="card shadow">
