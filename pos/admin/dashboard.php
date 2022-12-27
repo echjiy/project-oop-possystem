@@ -88,7 +88,7 @@ require_once('partials/_analytics.php');
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-green text-white rounded-circle shadow">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fa-solid fa-peso-sign"></i>
                       </div>
                     </div>
                   </div>
