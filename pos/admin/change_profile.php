@@ -169,13 +169,13 @@ require_once('partials/_head.php');
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-username">User Name</label>
-                          <input type="text" name="admin_name" value="<?php echo $admin->admin_name; ?>" id="input-username" class="form-control form-control-alternative" ">
+                          <input type="text" required name="admin_name" value="<?php echo $admin->admin_name; ?>" id="input-username" class="form-control form-control-alternative" ">
                       </div>
                     </div>
                     <div class=" col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-email">Email address</label>
-                            <input type="email" id="input-email" value="<?php echo $admin->admin_email; ?>" name="admin_email" class="form-control form-control-alternative">
+                            <input type="email" required id="input-email" value="<?php echo $admin->admin_email; ?>" name="admin_email" class="form-control form-control-alternative">
                           </div>
                         </div>
 

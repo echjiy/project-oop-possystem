@@ -32,12 +32,12 @@ while ($admin = $res->fetch_object()) {
                             <h6 class="text-overflow m-0">Welcome!</h6>
                         </div>
                         <a href="change_profile.php" class="dropdown-item">
-                            <i class="ni ni-single-02"></i>
+                            <i class="fa-solid fa-circle-user"></i>
                             <span>My profile</span>
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="logout.php" class="dropdown-item">
-                            <i class="ni ni-user-run"></i>
+                            <i class="fas fa-sign-out-alt text-danger"></i>
                             <span>Logout</span>
                         </a>
                     </div>
