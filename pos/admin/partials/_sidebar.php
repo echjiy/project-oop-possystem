@@ -15,7 +15,7 @@ while ($admin = $res->fetch_object()) {
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="dashboard.php">   
+      <a class="navbar-brand text-secondary  pt-0" href="dashboard.php">   
              Restaurant Point <br>Of Sale    
       </a>
       <!-- User -->
@@ -84,32 +84,32 @@ while ($admin = $res->fetch_object()) {
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-secondary" href="dashboard.php">
-              <i class="ni ni-tv-2 text-primary"></i> Dashboard
+              <i class="ni ni-tv-2 text-secondary"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="customes.php">
-              <i class="fas fa-users text-primary"></i> Customers
+              <i class="fas fa-users text-secondary"></i> Customers
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="products.php">
-              <i class="ni ni-bullet-list-67 text-primary"></i>Products
+              <i class="ni ni-bullet-list-67 text-secondary"></i>Products
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="orders.php">
-              <i class="ni ni-cart text-primary"></i> Orders
+              <i class="ni ni-cart text-secondary"></i> Orders
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="payments.php">
-              <i class="ni ni-credit-card text-primary"></i> Payments
+              <i class="ni ni-credit-card text-secondary"></i> Payments
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="receipts.php">
-              <i class="fas fa-file-invoice-dollar text-primary"></i> Receipts
+              <i class="fas fa-file-invoice-dollar text-secondary"></i> Receipts
             </a>
           </li>
         </ul>
@@ -133,7 +133,7 @@ while ($admin = $res->fetch_object()) {
         <hr class="my-3">
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link" href="logout.php">
+            <a class="nav-link text-secondary" href="logout.php">
               <i class="fas fa-sign-out-alt text-danger"></i> Log Out
             </a>
           </li>
