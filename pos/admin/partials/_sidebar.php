@@ -16,7 +16,7 @@ while ($admin = $res->fetch_object()) {
       </button>
       <!-- Brand -->
       <a class="navbar-brand text-secondary  pt-0" href="dashboard.php">   
-             Restaurant Point <br>Of Sale    
+              Point of Sale and <br> Inventory Management    
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
