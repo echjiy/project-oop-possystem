@@ -80,6 +80,7 @@ while ($admin = $res->fetch_object()) {
             </div>
           </div>
         </form>
+        <h6 class="navbar-heading text-muted">Main</h6>
         <!-- Navigation -->
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -116,7 +117,7 @@ while ($admin = $res->fetch_object()) {
         <!-- Divider -->
         <hr class="my-3">
         <!-- Heading -->
-        <h6 class="navbar-heading text-muted">Reporting</h6>
+        <h6 class="navbar-heading text-muted">Reports</h6>
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
