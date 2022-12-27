@@ -36,7 +36,7 @@ require_once('partials/_analytics.php');
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                        <i class="fas fa-users"></i>
+                        <i class="fa-solid fa-user-group"></i>
                       </div>
                     </div>
                   </div>
@@ -54,7 +54,7 @@ require_once('partials/_analytics.php');
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-primary text-white rounded-circle shadow">
-                        <i class="fas fa-utensils"></i>
+                        <i class="fa-solid fa-box"></i>
                       </div>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ require_once('partials/_analytics.php');
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fa-solid fa-cart-arrow-down"></i>
                       </div>
                     </div>
                   </div>

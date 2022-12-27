@@ -84,27 +84,27 @@ while ($admin = $res->fetch_object()) {
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-secondary" href="dashboard.php">
-              <i class="ni ni-tv-2 text-secondary"></i> Dashboard
+              <i class="fa-solid fa-gauge-high"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="customes.php">
-              <i class="fas fa-users text-secondary"></i> Customers
+              <i class="fa-solid fa-user-group"></i> Customers
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="products.php">
-              <i class="ni ni-bullet-list-67 text-secondary"></i>Products
+            <i class="fa-solid fa-box"></i>Products
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="orders.php">
-              <i class="ni ni-cart text-secondary"></i> Orders
+              <i class="fa-solid fa-cart-arrow-down"></i> Orders
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="payments.php">
-              <i class="ni ni-credit-card text-secondary"></i> Payments
+              <i class="fa-solid fa-money-bills"></i> Payments
             </a>
           </li>
           <li class="nav-item">
@@ -121,12 +121,12 @@ while ($admin = $res->fetch_object()) {
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
             <a class="nav-link text-secondary" href="orders_reports.php">
-              <i class="fas fa-shopping-basket"></i> Orders
+              <i class="fa-solid fa-comment-dollar"></i> Orders
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="payments_reports.php">
-              <i class="fas fa-funnel-dollar"></i> Payments
+              <i class="fa-solid fa-cash-register"></i> Payments
             </a>
           </li>
         </ul>
