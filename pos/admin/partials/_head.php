@@ -70,4 +70,5 @@ Inventory Management </title>
 
         }
     </script>
+    <script src="https://kit.fontawesome.com/c5808c0fe0.js" crossorigin="anonymous"></script>
 </head>
