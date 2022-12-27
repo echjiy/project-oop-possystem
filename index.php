@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Point of Sale and
-Inventory Management</title>
+    <title>POS System</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -51,19 +50,38 @@ Inventory Management</title>
             font-size: 84px;
         }
 
-        .links>a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+        button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left:50px;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
 
         .m-b-md {
             margin-bottom: 30px;
         }
+
     </style>
 </head>
 
@@ -71,14 +89,14 @@ Inventory Management</title>
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                POS Management System
+            Point Of Sale and <br> Inventory Management System
             </div>
 
-            <div class="links">
-			<!-- For more projects: Visit NetGO+  -->
-                <a href="pos/admin/">Admin Log In</a>
-                <a href="pos/customer">Customer Log In</a>
-            </div>
+    
+			
+                <a href="pos/admin/"> <button>Login Admin</button></a>
+                <a href="pos/customer"> <button>Customer Admin</button></a>
+           
         </div>
     </div>
 </body>
