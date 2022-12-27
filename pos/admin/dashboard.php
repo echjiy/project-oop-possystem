@@ -211,7 +211,6 @@ require_once('partials/_analytics.php');
         </div>
       </div>
       <!-- Footer -->
-      <?php require_once('partials/_footer.php'); ?>
     </div>
   </div>
   <!-- Argon Scripts -->
