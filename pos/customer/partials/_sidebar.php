@@ -15,9 +15,9 @@ while ($customer = $res->fetch_object()) {
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-        <a class="nav-link text-secondary">
-             Restaurant Point Of Sale
-            </a>
+      <a class="navbar-brand text-secondary  pt-0" href="dashboard.php">   
+              Point of Sale and <br> Inventory Management    
+      </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
         <li class="nav-item dropdown">

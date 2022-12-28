@@ -107,14 +107,14 @@ require_once('partials/_analytics.php');
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th class="text-success" scope="col">Code</th>
+                    <th  scope="col">Code</th>
                     <th scope="col">Customer</th>
-                    <th class="text-success" scope="col">Product</th>
+                    <th  scope="col">Product</th>
                     <th scope="col">Unit Price</th>
-                    <th class="text-success" scope="col">#</th>
+                    <th  scope="col">#</th>
                     <th scope="col">Total Price</th>
                     <th scop="col">Status</th>
-                    <th class="text-success" scope="col">Date</th>
+                    <th  scope="col">Date</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -168,9 +168,9 @@ require_once('partials/_analytics.php');
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th class="text-success" scope="col">Code</th>
+                    <th  scope="col">Code</th>
                     <th scope="col">Amount</th>
-                    <th class='text-success' scope="col">Order Code</th>
+                    <th  scope="col">Order Code</th>
                   </tr>
                 </thead>
                 <tbody>
