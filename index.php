@@ -90,7 +90,7 @@ button:active {
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-            Point Of Sale and <br> Inventory Management System
+            Point of Sale and <br> Inventory Management System
             </div>
 
     
