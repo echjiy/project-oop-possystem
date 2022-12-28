@@ -47,7 +47,7 @@ require_once('partials/_head.php');
           <div class="card shadow">
             <div class="card-header border-0">
               <a href="add_product.php" class="btn btn-outline-success">
-                <i class="fas fa-utensils"></i>
+                <i class="fa-solid fa-circle-plus"></i>
                 Add New Product
               </a>
             </div>
@@ -87,14 +87,14 @@ require_once('partials/_head.php');
                       <td>
                         <a href="products.php?delete=<?php echo $prod->prod_id; ?>">
                           <button class="btn btn-sm btn-danger">
-                            <i class="fas fa-trash"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                             Delete
                           </button>
                         </a>
 
                         <a href="update_product.php?update=<?php echo $prod->prod_id; ?>">
                           <button class="btn btn-sm btn-primary">
-                            <i class="fas fa-edit"></i>
+                            <i class="fa-solid fa-pen"></i>
                             Update
                           </button>
                         </a>
