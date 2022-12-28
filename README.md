@@ -14,4 +14,3 @@ Password: 123456
 
 Email	: customer@mail.com
 Password: 123456
-
