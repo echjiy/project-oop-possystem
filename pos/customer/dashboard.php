@@ -37,7 +37,7 @@ require_once('partials/_analytics.php');
                       </div>
                       <div class="col-auto">
                         <div class="icon icon-shape bg-purple text-white rounded-circle shadow">
-                          <i class="fa-duotone fa-plate-utensils"></i>
+                          <i class="fa-solid fa-cart-flatbed"></i>
                         </div>
                       </div>
                     </div>
@@ -56,7 +56,7 @@ require_once('partials/_analytics.php');
                       </div>
                       <div class="col-auto">
                         <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                          <i class="fas fa-shopping-cart"></i>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
                         </div>
                       </div>
                     </div>
@@ -75,7 +75,7 @@ require_once('partials/_analytics.php');
                       </div>
                       <div class="col-auto">
                         <div class="icon icon-shape bg-green text-white rounded-circle shadow">
-                          <i class="fas fa-wallet"></i>
+                          <i class="fa-solid fa-peso-sign"></i>
                         </div>
                       </div>
                     </div>
@@ -107,14 +107,14 @@ require_once('partials/_analytics.php');
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th class="text-success" scope="col">Code</th>
+                    <th  scope="col">Code</th>
                     <th scope="col">Customer</th>
-                    <th class="text-success" scope="col">Product</th>
+                    <th  scope="col">Product</th>
                     <th scope="col">Unit Price</th>
-                    <th class="text-success" scope="col">#</th>
+                    <th  scope="col">#</th>
                     <th scope="col">Total Price</th>
                     <th scop="col">Status</th>
-                    <th class="text-success" scope="col">Date</th>
+                    <th  scope="col">Date</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -168,9 +168,9 @@ require_once('partials/_analytics.php');
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th class="text-success" scope="col">Code</th>
+                    <th  scope="col">Code</th>
                     <th scope="col">Amount</th>
-                    <th class='text-success' scope="col">Order Code</th>
+                    <th  scope="col">Order Code</th>
                   </tr>
                 </thead>
                 <tbody>

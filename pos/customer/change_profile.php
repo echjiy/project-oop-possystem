@@ -181,19 +181,19 @@ require_once('partials/_head.php');
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-username">Full Name</label>
-                                                    <input type="text" name="customer_name" value="<?php echo $customer->customer_name; ?>" id="input-username" class="form-control form-control-alternative" ">
+                                                    <input type="text" required name="customer_name" value="<?php echo $customer->customer_name; ?>" id="input-username" class="form-control form-control-alternative" ">
                                                 </div>
                                             </div>
                                             <div class=" col-lg-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-email">Phone Number</label>
-                                                    <input type="text" id="input-email" value="<?php echo $customer->customer_phoneno; ?>" name="customer_phone" class="form-control form-control-alternative">
+                                                    <input type="text" required id="input-email" value="<?php echo $customer->customer_phoneno; ?>" name="customer_phone" class="form-control form-control-alternative">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-email">Email address</label>
-                                                    <input type="email" id="input-email" value="<?php echo $customer->customer_email; ?>" name="customer_email" class="form-control form-control-alternative">
+                                                    <input type="email" required id="input-email" value="<?php echo $customer->customer_email; ?>" name="customer_email" class="form-control form-control-alternative">
                                                 </div>
                                             </div>
                                         </div>

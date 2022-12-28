@@ -38,11 +38,11 @@ require_once('partials/_head.php');
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th class="text-success" scope="col">Payment Code</th>
+                                        <th  scope="col">Payment Code</th>
                                         <th scope="col">Payment Method</th>
-                                        <th class="text-success" scope="col">Order Code</th>
+                                        <th  scope="col">Order Code</th>
                                         <th scope="col">Amount Paid</th>
-                                        <th class="text-success" scope="col">Date Paid</th>
+                                        <th  scope="col">Date Paid</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -55,19 +55,19 @@ require_once('partials/_head.php');
                                     while ($payment = $res->fetch_object()) {
                                     ?>
                                         <tr>
-                                            <th class="text-success" scope="row">
+                                            <th  scope="row">
                                                 <?php echo $payment->pay_code; ?>
                                             </th>
                                             <th scope="row">
                                                 <?php echo $payment->pay_method; ?>
                                             </th>
-                                            <td class="text-success">
+                                            <td >
                                                 <?php echo $payment->order_code; ?>
                                             </td>
                                             <td>
                                                 $ <?php echo $payment->pay_amt; ?>
                                             </td>
-                                            <td class="text-success">
+                                            <td >
                                                 <?php echo date('d/M/Y g:i', strtotime($payment->created_at)) ?>
                                             </td>
                                         </tr>
