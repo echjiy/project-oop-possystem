@@ -10,7 +10,7 @@ if (isset($_POST['pay'])) {
   //Prevent Posting Blank Values
 
   if (empty($_POST["pay_code"]) || empty($_POST["pay_amt"]) || empty($_POST['pay_method'])) {
-    $err = "Blank Values Not Accepted";
+    $err = "Please don't leave a blank!";
   } else {
 
     $pay_code = $_POST['pay_code'];
@@ -37,7 +37,7 @@ if (isset($_POST['pay'])) {
     $upStmt->execute();
     //declare a varible which will be passed to alert function
     if ($upStmt && $postStmt) {
-      $success = "Paid" && header("refresh:1; url=receipts.php");
+      $success = "Paid" && header("refresh:1; url=payments_reports.php");
     } else {
       $err = "Please Try Again Or Try Later";
     }
@@ -105,7 +105,6 @@ require_once('partials/_head.php');
                     <label>Payment Method</label>
                     <select class="form-control" name="pay_method">
                         <option selected>Cash</option>
-                        <option>Paypal</option>
                     </select>
                   </div>
                 </div>
