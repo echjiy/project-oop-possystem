@@ -104,7 +104,7 @@ require_once('partials/_head.php');
         while ($customer = $res->fetch_object()) {
         ?>
             <!-- Header -->
-            <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-size: cover; background-position: center top;">
+            <div class="bg-gradient-dark header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-size: cover; background-position: center top;">
                 <!-- Mask -->
                 <span class="mask bg-gradient-dark opacity-8"></span>
                 <!-- Header container -->
@@ -118,7 +118,7 @@ require_once('partials/_head.php');
                 </div>
             </div>
             <!-- Page content -->
-            <div class="container-fluid mt--8">
+            <div class="container-fluid mt--8 bg-gradient-dark">
                 <div class="row">
                     <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
                         <div class="card card-profile shadow">

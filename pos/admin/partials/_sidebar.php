@@ -108,11 +108,7 @@ while ($admin = $res->fetch_object()) {
               <i class="fa-solid fa-money-bills"></i> Payments
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-secondary" href="receipts.php">
-              <i class="fas fa-file-invoice-dollar text-secondary"></i> Receipts
-            </a>
-          </li>
+        
         </ul>
         <!-- Divider -->
         <hr class="my-3">
