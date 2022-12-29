@@ -67,7 +67,7 @@ require_once('partials/_head.php');
   require_once('partials/_sidebar.php');
   ?>
   <!-- Main content -->
-  <div class="main-content">
+  <div class="main-content bg-gradient-dark">
     <!-- Top navbar -->
     <?php
     require_once('partials/_topnav.php');
@@ -81,8 +81,8 @@ require_once('partials/_head.php');
     ?>
     
     <!-- Header -->
-    <div style="background-image: url(../admin/assets/img/theme/restro00.jpg); background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
-    <span class="mask bg-gradient-dark opacity-8"></span>
+    <div style="background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
+    <span class="bg-gradient-dark opacity-8"></span>
       <div class="container-fluid">
         <div class="header-body">
         </div>
@@ -105,21 +105,21 @@ require_once('partials/_head.php');
                     <input type="text" name="pay_id" readonly value="<?php echo $payid;?>" class="form-control">
                   </div>
                   <div class="col-md-6">
-                    <label>Payment Code</label><small class="text-danger"> Type 10 Digits Alpha-Code If Payment Method Is In Cash</small>
-                    <input type="text" limit="11" name="pay_code" placeholder="<?php echo $mpesaCode; ?>" class="form-control" value="">
+                    <label>Payment Code</label>
+                    <input type="text" limit="11" name="pay_code" readonly value="<?php echo $mpesaCode; ?>" class="form-control" value="">
                   </div>
                 </div>
                 <hr>
                 <div class="form-row">
                   <div class="col-md-6">
-                    <label>Amount ($)</label>
+                    <label>Amount (₱)</label>
                     <input type="text" name="pay_amt" readonly value="<?php echo $total;?>" class="form-control">
                   </div>
                   <div class="col-md-6">
                     <label>Payment Method</label>
                     <select class="form-control" name="pay_method">
                         <option selected>Cash</option>
-                        <option>Paypal</option>
+                       
                     </select>
                   </div>
                 </div>

@@ -212,21 +212,21 @@ require_once('partials/_head.php');
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
                                                         <label class="form-control-label" for="input-username">Old Password</label>
-                                                        <input type="password" name="old_password" id="input-username" class="form-control form-control-alternative">
+                                                        <input type="password" required name="old_password" id="input-username" class="form-control form-control-alternative">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
                                                         <label class="form-control-label" for="input-email">New Password</label>
-                                                        <input type="password" name="new_password" class="form-control form-control-alternative">
+                                                        <input type="password" required name="new_password" class="form-control form-control-alternative">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
                                                         <label class="form-control-label" for="input-email">Confirm New Password</label>
-                                                        <input type="password" name="confirm_password" class="form-control form-control-alternative">
+                                                        <input type="password" required name="confirm_password" class="form-control form-control-alternative">
                                                     </div>
                                                 </div>
 

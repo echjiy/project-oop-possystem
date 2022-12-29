@@ -132,9 +132,9 @@ require_once('partials/_analytics.php');
                       <th class="text-success" scope="row"><?php echo $order->order_code; ?></th>
                       <td><?php echo $order->customer_name; ?></td>
                       <td class="text-success"><?php echo $order->prod_name; ?></td>
-                      <td>$<?php echo $order->prod_price; ?></td>
+                      <td>₱<?php echo $order->prod_price; ?></td>
                       <td class="text-success"><?php echo $order->prod_qty; ?></td>
-                      <td>$<?php echo $total; ?></td>
+                      <td>₱<?php echo $total; ?></td>
                       <td><?php if ($order->order_status == '') {
                             echo "<span class='badge badge-danger'>Not Paid</span>";
                           } else {
@@ -186,7 +186,7 @@ require_once('partials/_analytics.php');
                         <?php echo $payment->pay_code; ?>
                       </th>
                       <td>
-                        $<?php echo $payment->pay_amt; ?>
+                      ₱<?php echo $payment->pay_amt; ?>
                       </td>
                       <td class='text-success'>
                         <?php echo $payment->order_code; ?>

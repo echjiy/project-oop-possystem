@@ -169,19 +169,19 @@ require_once('partials/_head.php');
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-username">User Name</label>
-                          <input type="text" required name="admin_name" value="<?php echo $admin->admin_name; ?>" id="input-username" class="form-control form-control-alternative" ">
+                          <input type="text" required name="admin_name" required value="<?php echo $admin->admin_name; ?>" id="input-username" class="form-control form-control-alternative" ">
                       </div>
                     </div>
                     <div class=" col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-email">Email address</label>
-                            <input type="email" required id="input-email" value="<?php echo $admin->admin_email; ?>" name="admin_email" class="form-control form-control-alternative">
+                            <input type="email" required id="input-email" required value="<?php echo $admin->admin_email; ?>" name="admin_email" class="form-control form-control-alternative">
                           </div>
                         </div>
 
                         <div class="col-lg-12">
                           <div class="form-group">
-                            <input type="submit" id="input-email" name="ChangeProfile" class="btn btn-success form-control-alternative" value="Submit"">
+                            <input type="submit" id="input-email" required name="ChangeProfile" class="btn btn-success form-control-alternative" value="Submit"">
                       </div>
                     </div>
                   </div>
@@ -195,21 +195,21 @@ require_once('partials/_head.php');
                                 <div class="col-lg-12">
                                   <div class="form-group">
                                     <label class="form-control-label" for="input-username">Old Password</label>
-                                    <input type="password" name="old_password" id="input-username" class="form-control form-control-alternative">
+                                    <input type="password" required name="old_password" id="input-username" class="form-control form-control-alternative">
                                   </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                   <div class="form-group">
                                     <label class="form-control-label" for="input-email">New Password</label>
-                                    <input type="password" name="new_password" class="form-control form-control-alternative">
+                                    <input type="password" required name="new_password" class="form-control form-control-alternative">
                                   </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                   <div class="form-group">
                                     <label class="form-control-label" for="input-email">Confirm New Password</label>
-                                    <input type="password" name="confirm_password" class="form-control form-control-alternative">
+                                    <input type="password" required name="confirm_password" class="form-control form-control-alternative">
                                   </div>
                                 </div>
 

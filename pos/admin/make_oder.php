@@ -72,7 +72,7 @@ require_once('partials/_head.php');
 
                   <div class="col-md-4">
                     <label>Customer Name</label>
-                    <select class="form-control" name="customer_name" id="custName" onChange="getCustomer(this.value)">
+                    <select class="form-control" required name="customer_name" id="custName" onChange="getCustomer(this.value)">
                       <option value="">Select Customer Name</option>
                       <?php
                       //Load All Customers
@@ -114,7 +114,7 @@ require_once('partials/_head.php');
                     </div>
                     <div class="col-md-6">
                       <label>Product Quantity</label>
-                      <input type="text" name="prod_qty" class="form-control" value="">
+                      <input type="text" required name="prod_qty" class="form-control" value="">
                     </div>
                   </div>
                 <?php } ?>
