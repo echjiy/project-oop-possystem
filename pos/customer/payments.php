@@ -47,7 +47,7 @@ require_once('partials/_head.php');
                     <div class="card shadow">
                         <div class="card-header border-0">
                             <a href="orders.php" class="btn btn-outline-success">
-                                <i class="fas fa-plus"></i> <i class="fas fa-utensils"></i>
+                                <i class="fa-solid fa-circle-plus"></i>
                                 Make A New Order
                             </a>
                         </div>

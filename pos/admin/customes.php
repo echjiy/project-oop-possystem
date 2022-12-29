@@ -47,7 +47,7 @@ require_once('partials/_head.php');
           <div class="card shadow">
             <div class="card-header border-0">
               <a href="add_customer.php" class="btn btn-outline-success">
-                <i class="fas fa-user-plus"></i>
+                <i class="fa-solid fa-circle-plus"></i>
                 Add New Customer
               </a>
             </div>
@@ -76,14 +76,14 @@ require_once('partials/_head.php');
                       <td>
                         <a href="customes.php?delete=<?php echo $cust->customer_id; ?>">
                           <button class="btn btn-sm btn-danger">
-                            <i class="fas fa-trash"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                             Remove
                           </button>
                         </a>
 
                         <a href="update_customer.php?update=<?php echo $cust->customer_id; ?>">
                           <button class="btn btn-sm btn-primary">
-                            <i class="fas fa-user-edit"></i>
+                            <i class="fa-solid fa-pen"></i>
                             Update
                           </button>
                         </a>
