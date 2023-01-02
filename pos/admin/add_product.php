@@ -73,7 +73,7 @@ require_once('partials/_head.php');
                   </div>
                   <div class="col-md-6">
                     <label>Product Code</label>
-                    <input type="text" name="prod_code" value="<?php echo $alpha; ?>-<?php echo $beta; ?>" class="form-control" value="">
+                    <input type="text" readonly name="prod_code" value="<?php echo $alpha; ?>-<?php echo $beta; ?>" class="form-control" value="">
                   </div>
                 </div>
                 <hr>
@@ -84,7 +84,7 @@ require_once('partials/_head.php');
                   </div>
                   <div class="col-md-6">
                     <label>Product Price</label>
-                    <input type="text" name="prod_price" class="form-control" value="">
+                    <input type="number" name="prod_price" class="form-control" value="">
                   </div>
                 </div>
                 <hr>
