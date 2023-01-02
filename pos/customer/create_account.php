@@ -65,7 +65,7 @@ require_once('config/code-generator.php');
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                         </div>
-                                        <input class="form-control" required name="customer_phoneno" placeholder="Phone Number" type="text">
+                                        <input class="form-control" required name="customer_phoneno" placeholder="Phone Number" type="number">
                                     </div>
                                 </div>
                                 <div class="form-group mb-3">
