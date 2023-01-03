@@ -12,7 +12,7 @@ while ($customer = $res->fetch_object()) {
     <div class="container-fluid">
       <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-list text-light"></i>
       </button>
       <!-- Brand -->
       <a class="navbar-brand text-secondary  pt-0" href="dashboard.php">   
@@ -83,22 +83,22 @@ while ($customer = $res->fetch_object()) {
         <!-- Navigation -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="dashboard.php">
+            <a class="nav-link text-secondary" href="dashboard.php" id="dashboard-nav">
               <i class="fa-solid fa-gauge-high"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="change_profile.php">
+            <a class="nav-link text-secondary" href="change_profile.php" id="profile-nav">
               <i class="fa-solid fa-circle-user"></i> My Profile
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="orders.php">
+            <a class="nav-link text-secondary" href="orders.php" id="orders-nav">
               <i class="fa-solid fa-cart-arrow-down"></i></i>Make Order
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="payments.php">
+            <a class="nav-link text-secondary" href="payments.php" id="payments-nav">
               <i class="fa-solid fa-money-bills"></i> Payments
             </a>
           </li>
@@ -110,12 +110,12 @@ while ($customer = $res->fetch_object()) {
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="orders_reports.php">
+            <a class="nav-link text-secondary" href="orders_reports.php" id="orders2-nav">
               <i class="fa-solid fa-truck-ramp-box"></i> My Orders
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="payments_reports.php">
+            <a class="nav-link text-secondary" href="payments_reports.php" id="payments2-nav">
               <i class="fa-solid fa-wallet"></i> My Payments
             </a>
           </li>

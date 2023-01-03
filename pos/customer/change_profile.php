@@ -254,6 +254,16 @@ require_once('partials/_head.php');
     <?php
     require_once('partials/_sidebar.php');
     ?>
+    <!-- Argon Scripts -->
+    <?php
+    require_once('partials/_scripts.php');
+    ?>
 </body>
-
+<script>
+  $(document).ready(function(){
+    $("#profile-nav").attr({
+      "class" : "nav-link text-light border border-light rounded rounded-end"
+    });
+  });
+</script>
 </html>

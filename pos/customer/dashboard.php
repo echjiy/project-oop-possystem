@@ -209,5 +209,12 @@ require_once('partials/_analytics.php');
   ?>
 </body>
 <script src="https://kit.fontawesome.com/480009b501.js" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $("#dashboard-nav").attr({
+      "class" : "nav-link text-light border border-light rounded rounded-end"
+    });
+  });
+</script>
 </head>
 </html>
