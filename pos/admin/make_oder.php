@@ -114,7 +114,7 @@ require_once('partials/_head.php');
                     </div>
                     <div class="col-md-6">
                       <label>Product Quantity</label>
-                      <input type="text" required name="prod_qty" class="form-control" value="">
+                      <input type="text" min="1" name="prod_qty" class="form-control" value="" required>
                     </div>
                   </div>
                 <?php } ?>
