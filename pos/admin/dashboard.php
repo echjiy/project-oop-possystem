@@ -219,5 +219,11 @@ require_once('partials/_analytics.php');
   require_once('partials/_scripts.php');
   ?>
 </body>
-
+<script>
+  $(document).ready(function(){
+    $("#dashboard-nav").attr({
+      "class" : "nav-link text-light border border-light rounded rounded-end"
+    });
+  });
+</script>
 </html>

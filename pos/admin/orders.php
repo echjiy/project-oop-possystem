@@ -95,5 +95,11 @@ require_once('partials/_head.php');
   require_once('partials/_scripts.php');
   ?>
 </body>
-
+<script>
+  $(document).ready(function(){
+    $("#orders-nav").attr({
+      "class" : "nav-link text-light border border-light rounded rounded-end"
+    });
+  });
+</script>
 </html>

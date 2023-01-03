@@ -12,7 +12,7 @@ while ($admin = $res->fetch_object()) {
     <div class="container-fluid">
       <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-list text-light"></i>
       </button>
       <!-- Brand -->
       <a class="navbar-brand text-secondary  pt-0" href="dashboard.php">   
@@ -31,7 +31,7 @@ while ($admin = $res->fetch_object()) {
           <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="media align-items-center">
               <span class="avatar avatar-sm rounded-circle">
-                <img alt="Image placeholder" src="assets/img/theme/team-1-800x800.jpg">
+                <img alt="Image placeholder" src="assets/img/theme/user-a-min.png">
               </span>
             </div>
           </a>
@@ -40,12 +40,12 @@ while ($admin = $res->fetch_object()) {
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
             <a href="change_profile.php" class="dropdown-item">
-              <i class="ni ni-single-02"></i>
+            <i class="fa-solid fa-circle-user"></i>
               <span>My profile</span>
             </a>
             <div class="dropdown-divider"></div>
             <a href="logout.php" class="dropdown-item">
-              <i class="ni ni-user-run"></i>
+            <i class="fas fa-sign-out-alt text-danger"></i>
               <span>Logout</span>
             </a>
           </div>
@@ -84,27 +84,27 @@ while ($admin = $res->fetch_object()) {
         <!-- Navigation -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="dashboard.php">
+            <a class="nav-link text-secondary" href="dashboard.php" id="dashboard-nav">
               <i class="fa-solid fa-gauge-high"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="customes.php">
+            <a class="nav-link text-secondary" href="customes.php" id="customers-nav">
               <i class="fa-solid fa-user-group"></i> Customers
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="products.php">
+            <a class="nav-link text-secondary" href="products.php" id="products-nav">
             <i class="fa-solid fa-box"></i>Products
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="orders.php">
+            <a class="nav-link text-secondary" href="orders.php" id="orders-nav">
               <i class="fa-solid fa-cart-arrow-down"></i> Orders
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="payments.php">
+            <a class="nav-link text-secondary" href="payments.php" id="payments-nav">
               <i class="fa-solid fa-money-bills"></i> Payments
             </a>
           </li>
@@ -117,12 +117,12 @@ while ($admin = $res->fetch_object()) {
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="orders_reports.php">
+            <a class="nav-link text-secondary" href="orders_reports.php" id="orders2-nav">
               <i class="fa-solid fa-comment-dollar"></i> Orders
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="payments_reports.php">
+            <a class="nav-link text-secondary" href="payments_reports.php" id="payments2-nav">
               <i class="fa-solid fa-cash-register"></i> Payments
             </a>
           </li>
