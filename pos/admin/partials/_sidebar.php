@@ -104,6 +104,11 @@ while ($admin = $res->fetch_object()) {
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link text-secondary" href="inventory.php" id="inventory-nav">
+            <i class="fa-solid fa-warehouse"></i>Inventory
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-secondary" href="orders.php" id="orders-nav">
               <i class="fa-solid fa-cart-arrow-down"></i> Orders
             </a>

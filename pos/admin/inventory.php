@@ -3,7 +3,20 @@ session_start();
 include('config/config.php');
 include('config/checklogin.php');
 check_login();
-
+if (isset($_GET['delete'])) {
+  $id = (int)$_GET['delete'];
+  $adn = "DELETE FROM  rpos_products  WHERE  prod_id = ?";
+  $stmt = $mysqli->prepare($adn);
+  $stmt->bind_param('i', $id);
+  $stmt->execute();
+  $stmt->close();
+  if ($stmt) {
+    $success = "Deleted";
+    header("refresh:1; url=inventory.php");
+  } else {
+    $err = "Try Again Later";
+  }
+}
 require_once('partials/_head.php');
 ?>
 
@@ -20,9 +33,9 @@ require_once('partials/_head.php');
     ?>
     <!-- Header -->
     <div style="background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
-    <span class=" bg-gradient-dark opacity-8"></span>
-      <div class="container-fluid ">
-        <div class="header-body ">
+    <span class="bg-gradient-dark opacity-8"></span>
+      <div class="container-fluid">
+        <div class="header-body">
         </div>
       </div>
     </div>
@@ -33,18 +46,18 @@ require_once('partials/_head.php');
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
-              Select On Any Product To Make An Order
+                Product Quantity
+              </a>
             </div>
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col"><b>Image</b></th>
-                    <th scope="col"><b>Product Code</b></th>
-                    <th scope="col"><b>Name</b></th>
-                    <th scope="col"><b>Price</b></th>
-                    <th scope="col"><b>Available</b></th>
-                    <th scope="col"><b>Action</b></th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product Code</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -57,7 +70,7 @@ require_once('partials/_head.php');
                   ?>
                     <tr>
                       <td>
-                        <?php
+                        <?php 
                         if ($prod->prod_img) {
                           echo "<img src='assets/img/products/$prod->prod_img' height='60' width='60 class='img-thumbnail'>";
                         } else {
@@ -68,13 +81,19 @@ require_once('partials/_head.php');
                       </td>
                       <td><?php echo $prod->prod_code; ?></td>
                       <td><?php echo $prod->prod_name; ?></td>
-                      <td>₱ <?php echo $prod->prod_price; ?></td>
                       <td><?php echo $prod->prod_quan; ?></td>
                       <td>
-                        <a href="make_oder.php?prod_id=<?php echo $prod->prod_id; ?>&prod_name=<?php echo $prod->prod_name; ?>&prod_price=<?php echo $prod->prod_price; ?>">
-                          <button class="btn btn-sm btn-warning">
-                            <i class="fas fa-cart-plus"></i>
-                            Place Order
+                        <a href="inventory.php?delete=<?php echo $prod->prod_id; ?>">
+                          <button class="btn btn-sm btn-danger">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Delete
+                          </button>
+                        </a>
+
+                        <a href="update_quantity.php?update=<?php echo $prod->prod_id; ?>">
+                          <button class="btn btn-sm btn-primary">
+                            <i class="fa-solid fa-pen"></i>
+                            Add Quantity
                           </button>
                         </a>
                       </td>
@@ -99,7 +118,7 @@ require_once('partials/_head.php');
 </body>
 <script>
   $(document).ready(function(){
-    $("#orders-nav").attr({
+    $("#inventory-nav").attr({
       "class" : "nav-link text-light border border-light rounded rounded-end"
     });
   });
