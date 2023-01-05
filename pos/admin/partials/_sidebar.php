@@ -89,8 +89,8 @@ while ($admin = $res->fetch_object()) {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hrm.php">
-              <i class="fas fa-user-tie text-primary"></i> Staff
+            <a class="nav-link text-secondary" href="hrm.php" id="hrm-nav">
+              <i class="fas fa-user-tie"></i> Staff
             </a>
           </li>
           <li class="nav-item">
