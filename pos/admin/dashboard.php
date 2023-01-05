@@ -219,6 +219,7 @@ require_once('partials/_analytics.php');
   require_once('partials/_scripts.php');
   ?>
 </body>
+<script src="https://kit.fontawesome.com/480009b501.js" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function(){
     $("#dashboard-nav").attr({
