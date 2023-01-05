@@ -32,8 +32,8 @@ require_once('partials/_head.php');
     require_once('partials/_topnav.php');
     ?>
     <!-- Header -->
-    <div style="background-image: url(assets/img/theme/restro00.jpg); background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
-    <span class="mask bg-gradient-dark opacity-8"></span>
+    <div style="background-size: cover;" class="header  pb-8 pt-5 pt-md-8">
+    <span class="bg-gradient-dark opacity-8"></span>
       <div class="container-fluid">
         <div class="header-body">
         </div>
@@ -105,4 +105,8 @@ require_once('partials/_head.php');
   ?>
 </body>
 
+
 </html>
+<script>
+
+</script>
