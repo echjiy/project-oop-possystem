@@ -105,7 +105,11 @@ require_once('partials/_head.php');
   ?>
 </body>
 
-</html>
 <script>
-
+  $(document).ready(function(){
+    $("#hrm-nav").attr({
+      "class" : "nav-link text-light border border-light rounded rounded-end"
+    });
+  });
 </script>
+</html>
