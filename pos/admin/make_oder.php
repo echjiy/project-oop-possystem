@@ -20,21 +20,39 @@ if (isset($_POST['make'])) {
     $prod_name = $_GET['prod_name'];
     $prod_price = $_GET['prod_price'];
     $prod_qty = $_POST['prod_qty'];
-
-    //Insert Captured information to a database table
-    $postQuery = "INSERT INTO rpos_orders (prod_qty, order_id, order_code, customer_id, customer_name, prod_id, prod_name, prod_price) VALUES(?,?,?,?,?,?,?,?)";
-    $postStmt = $mysqli->prepare($postQuery);
-    //bind paramaters
-    $rc = $postStmt->bind_param('ssssssss', $prod_qty, $order_id, $order_code, $customer_id, $customer_name, $prod_id, $prod_name, $prod_price);
-    $postStmt->execute();
-    //declare a varible which will be passed to alert function
-    if ($postStmt) {
-      $success = "Order Submitted" && header("refresh:1; url=payments.php");
+    $prod_quan = isset($_GET['prod_quan']) ? $_GET['prod_quan'] : 0;
+    
+    //Check if there are enough products in stock
+    $checkQuery = "SELECT prod_quan FROM rpos_products WHERE prod_id = ?";
+    $checkStmt = $mysqli->prepare($checkQuery);
+    $checkStmt->bind_param('s', $prod_id);
+    $checkStmt->execute();
+    $checkResult = $checkStmt->get_result();
+    $checkRow = $checkResult->fetch_assoc();
+    if ($checkRow['prod_quan'] < $prod_qty) {
+      $err = "Not enough products in stock";
     } else {
-      $err = "Please Try Again Or Try Later";
+      //Insert Captured information to a database table
+      $postQuery = "INSERT INTO rpos_orders (prod_qty, prod_quan, order_id, order_code, customer_id, customer_name, prod_id, prod_name, prod_price) VALUES(?,?,?,?,?,?,?,?,?)";
+      $postStmt = $mysqli->prepare($postQuery);
+      //bind paramaters
+      $rc = $postStmt->bind_param('sssssssss', $prod_qty, $prod_quan, $order_id, $order_code, $customer_id, $customer_name, $prod_id, $prod_name, $prod_price);
+      $postStmt->execute();
+      //Update the product quantity in the rpos_products table
+      $updateQuery = "UPDATE rpos_products SET prod_quan = prod_quan - ? WHERE prod_id = ?";
+      $updateStmt = $mysqli->prepare($updateQuery);
+      $updateStmt->bind_param('ss', $prod_qty, $prod_id);
+      $updateStmt->execute();
+      //declare a varible which will be passed to alert function
+      if ($postStmt && $updateStmt) {
+        $success = "Order Submitted" && header("refresh:1; url=payments.php");
+      } else {
+        $err = "Please Try Again Or Try Later";
+      }
     }
   }
 }
+
 require_once('partials/_head.php');
 ?>
 

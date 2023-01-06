@@ -3,20 +3,6 @@ session_start();
 include('config/config.php');
 include('config/checklogin.php');
 check_login();
-if (isset($_GET['delete'])) {
-  $id = (int)$_GET['delete'];
-  $adn = "DELETE FROM  rpos_products  WHERE  prod_id = ?";
-  $stmt = $mysqli->prepare($adn);
-  $stmt->bind_param('i', $id);
-  $stmt->execute();
-  $stmt->close();
-  if ($stmt) {
-    $success = "Deleted";
-    header("refresh:1; url=inventory.php");
-  } else {
-    $err = "Try Again Later";
-  }
-}
 require_once('partials/_head.php');
 ?>
 
@@ -83,10 +69,10 @@ require_once('partials/_head.php');
                       <td><?php echo $prod->prod_name; ?></td>
                       <td><?php echo $prod->prod_quan; ?></td>
                       <td>
-                        <a href="inventory.php?delete=<?php echo $prod->prod_id; ?>">
+                        <a href="decrease_quantity.php?decrease=<?php echo $prod->prod_id; ?>">
                           <button class="btn btn-sm btn-danger">
                             <i class="fa-solid fa-trash-can"></i>
-                            Delete
+                            Decrease Quantity
                           </button>
                         </a>
 
