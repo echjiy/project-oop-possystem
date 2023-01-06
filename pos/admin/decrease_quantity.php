@@ -5,22 +5,22 @@ include('config/checklogin.php');
 include('config/code-generator.php');
 
 check_login();
-if (isset($_POST['addQuantity'])) {
+if (isset($_POST['decQuantity'])) {
   //Prevent Posting Blank Values
   if (empty($_POST['prod_quan'])) {
     $err = "Blank Values Not Accepted";
   } else {
-    $update = $_GET['update'];
+    $decrease = $_GET['decrease'];
     $prod_code  = $_POST['prod_code'];
     $prod_name = $_POST['prod_name'];
     $prod_quan = $_POST['prod_quan'];
   
 
     //Insert Captured information to a database table
-    $postQuery = "UPDATE rpos_products p JOIN rpos_orders o ON p.prod_id = o.prod_id SET p.prod_quan = p.prod_quan + ?, o.prod_quan = o.prod_quan + ? WHERE p.prod_id = ?";
+    $postQuery = "UPDATE rpos_products p JOIN rpos_orders o ON p.prod_id = o.prod_id SET p.prod_quan = p.prod_quan - ?, o.prod_quan = o.prod_quan - ? WHERE p.prod_id = ?";
     $postStmt = $mysqli->prepare($postQuery);
     //bind paramaters
-    $rc = $postStmt->bind_param('sss', $prod_quan, $prod_quan, $update);
+    $rc = $postStmt->bind_param('sss', $prod_quan, $prod_quan, $decrease);
     $postStmt->execute();
     //declare a varible which will be passed to alert function
     if ($postStmt) {
@@ -43,8 +43,8 @@ require_once('partials/_head.php');
     <!-- Top navbar -->
     <?php
     require_once('partials/_topnav.php');
-    $update = $_GET['update'];
-    $ret = "SELECT * FROM  rpos_products WHERE prod_id = '$update' ";
+    $decrease = $_GET['decrease'];
+    $ret = "SELECT * FROM  rpos_products WHERE prod_id = '$decrease' ";
     $stmt = $mysqli->prepare($ret);
     $stmt->execute();
     $res = $stmt->get_result();
@@ -92,7 +92,7 @@ require_once('partials/_head.php');
                   <br>
                   <div class="form-row">
                     <div class="col-md-6">
-                      <input type="submit" name="addQuantity" value="Add Quantity" class="btn btn-success" value="">
+                      <input type="submit" name="decQuantity" value="Decrease Quantity" class="btn btn-danger" value="">
                     </div>
                   </div>
                 </form>
