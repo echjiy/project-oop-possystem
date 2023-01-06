@@ -4,6 +4,7 @@ include('config/config.php');
 include('config/checklogin.php');
 include('config/code-generator.php');
 
+
 check_login();
 if (isset($_POST['addQuantity'])) {
   //Prevent Posting Blank Values
@@ -17,10 +18,10 @@ if (isset($_POST['addQuantity'])) {
   
 
     //Insert Captured information to a database table
-    $postQuery = "UPDATE rpos_products p JOIN rpos_orders o ON p.prod_id = o.prod_id SET p.prod_quan = p.prod_quan + ?, o.prod_quan = o.prod_quan + ? WHERE p.prod_id = ?";
+    $postQuery = "UPDATE rpos_products SET prod_quan = prod_quan + ? WHERE prod_id = ?";
     $postStmt = $mysqli->prepare($postQuery);
     //bind paramaters
-    $rc = $postStmt->bind_param('sss', $prod_quan, $prod_quan, $update);
+    $rc = $postStmt->bind_param('ss',$prod_quan, $update);
     $postStmt->execute();
     //declare a varible which will be passed to alert function
     if ($postStmt) {
