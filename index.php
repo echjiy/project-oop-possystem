@@ -97,6 +97,7 @@ button:active {
 			
                 <a href="pos/admin/"> <button>Admin Login</button></a>
                 <a href="pos/customer"> <button>Customer Login</button></a>
+                <a href="pos/cashier"> <button>Cashier Login</button></a>
            
         </div>
     </div>
